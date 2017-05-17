@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E863E601ECCB75300B2538D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E863E5F1ECCB75300B2538D /* QuestionViewController.swift */; };
+		8E863E621ECCB76B00B2538D /* Answer ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E863E611ECCB76B00B2538D /* Answer ViewController.swift */; };
 		8EDF45061ECC3D3F00DF374B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF45051ECC3D3F00DF374B /* AppDelegate.swift */; };
 		8EDF45081ECC3D3F00DF374B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF45071ECC3D3F00DF374B /* ViewController.swift */; };
 		8EDF450B1ECC3D3F00DF374B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF45091ECC3D3F00DF374B /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E863E5F1ECCB75300B2538D /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		8E863E611ECCB76B00B2538D /* Answer ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Answer ViewController.swift"; sourceTree = "<group>"; };
 		8EDF45021ECC3D3F00DF374B /* Ecosystems Final project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ecosystems Final project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDF45051ECC3D3F00DF374B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDF45071ECC3D3F00DF374B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				8EDF45051ECC3D3F00DF374B /* AppDelegate.swift */,
 				8EDF45071ECC3D3F00DF374B /* ViewController.swift */,
+				8E863E5F1ECCB75300B2538D /* QuestionViewController.swift */,
+				8E863E611ECCB76B00B2538D /* Answer ViewController.swift */,
 				8EDF45091ECC3D3F00DF374B /* Main.storyboard */,
 				8EDF450C1ECC3D3F00DF374B /* Assets.xcassets */,
 				8EDF450E1ECC3D3F00DF374B /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EDF45081ECC3D3F00DF374B /* ViewController.swift in Sources */,
+				8E863E621ECCB76B00B2538D /* Answer ViewController.swift in Sources */,
 				8EDF45061ECC3D3F00DF374B /* AppDelegate.swift in Sources */,
+				8E863E601ECCB75300B2538D /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +515,7 @@
 				8EDF452C1ECC3D4000DF374B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EDF452D1ECC3D4000DF374B /* Build configuration list for PBXNativeTarget "Ecosystems Final projectTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				8EDF452F1ECC3D4000DF374B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EDF45301ECC3D4000DF374B /* Build configuration list for PBXNativeTarget "Ecosystems Final projectUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				8EDF45321ECC3D4000DF374B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

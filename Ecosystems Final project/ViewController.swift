@@ -11,9 +11,9 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var TableView1: UITableView!
+    var questionTopics = ["Flow of Energy","Adaptation","Patterns of Interaction","Changes in Population","Biodiversity","Resource Availibility"]
+    var questions = ["Which is the order of the flow of energy in an energy pyramid from bottom to top","Which would be considered an adaptation?"]
     
-    var question1 = "Which is the order of the flow of energy in an energy pyramid from bottom to top?"
-    var answers1 = ["Primary Consumer,Tertiary Consumer,Secondary Consumer,Producer,Decomposer","Producer,Primary Consumer,Secondary Consumer,Tertiary Consumer,Decomposer.", "Producer,Secondary Consumer,Tertiary Consumer, Decomposer"]
 
     
     override func viewDidLoad() {
@@ -25,13 +25,33 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 6
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = answers1[indexPath.row]
+        cell.textLabel?.text = questionTopics[indexPath.row]
+        cell.textLabel!.font = UIFont(name: cell.textLabel!.font.fontName, size:20)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let question = questions[indexPath.row]
+        performSegue(withIdentifier: "QuestionSegue", sender: question)
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let QVC = segue.destination as! QuestionViewController
+        
+        QVC.displayquestion = sender as! String
+        
+        
+        
+       
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
