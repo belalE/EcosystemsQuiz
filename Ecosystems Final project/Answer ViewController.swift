@@ -10,6 +10,9 @@ import UIKit
 
 class Answer_ViewController: UIViewController {
 
+    
+    var answerSent = "NO ANSWER"
+    
     @IBOutlet weak var checkLabel: UILabel!
     
     @IBOutlet weak var HelpText: UITextView!
@@ -18,7 +21,14 @@ class Answer_ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if answerSent == "A plant growing to the side to get sunlight" or "Producer,Primary Consumer,Secondary Consumer,Tertiary Consumer,Decomposer." {
+        
+            self.checkLabel.text = "✅ Correct"
+        }
+    
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

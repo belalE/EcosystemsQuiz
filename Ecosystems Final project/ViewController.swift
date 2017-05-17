@@ -12,7 +12,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     @IBOutlet weak var TableView1: UITableView!
     var questionTopics = ["Flow of Energy","Adaptation","Patterns of Interaction","Changes in Population","Biodiversity","Resource Availibility"]
-    var questions = ["Which is the order of the flow of energy in an energy pyramid from bottom to top","Which would be considered an adaptation?"]
+    var questions = ["Which is the order of the flow of energy in an energy pyramid from bottom to top","Which would be considered an adaptation?","Which is correct in the following?"]
     
 
     

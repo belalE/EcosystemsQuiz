@@ -48,9 +48,27 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if 
+        var answersent = [String]()
+        if displayquestion == "Which is the order of the flow of energy in an energy pyramid from bottom to top" {
+            
+        answersent = String(answers1[indexPath.row])
+        
     }
+        if displayquestion == "Which would be considered an adaptation?" {
+             answersent = String(answers2[indexPath.row])
+            
+        }
+        
+        performSegue(withIdentifier: "AnswerSegue", sender: answersent)
+    }
+
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let AVC = segue.destination as! Answer_ViewController
+        
+        
+        AVC.answerSent = sender as! String
+    }
    
     
     override func viewDidLoad() {
