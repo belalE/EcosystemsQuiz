@@ -51,11 +51,11 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         var answersent = [String]()
         if displayquestion == "Which is the order of the flow of energy in an energy pyramid from bottom to top" {
             
-        answersent = String(answers1[indexPath.row])
+        answersent = [answers1[indexPath.row]]
         
     }
         if displayquestion == "Which would be considered an adaptation?" {
-             answersent = String(answers2[indexPath.row])
+             answersent = [answers2[indexPath.row]]
             
         }
         

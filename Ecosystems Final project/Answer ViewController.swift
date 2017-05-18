@@ -22,9 +22,33 @@ class Answer_ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        if answerSent == "A plant growing to the side to get sunlight" or "Producer,Primary Consumer,Secondary Consumer,Tertiary Consumer,Decomposer." {
+        if answerSent == "A plant growing to the side to get sunlight" {
         
             self.checkLabel.text = "✅ Correct"
+            self.HelpText.text = "Good Job!"
+        }
+        if answerSent ==  "Producer,Primary Consumer,Secondary Consumer,Tertiary Consumer,Decomposer." {
+            self.checkLabel.text = "✅ Correct"
+            self.HelpText.text = "Good Job!"
+
+        }
+        
+        
+        if answerSent == "Producer,Secondary Consumer,Tertiary Consumer, Decomposer" {
+            self.checkLabel.text = "❌ Incorrect"
+        }
+        if answerSent == "Primary Consumer,Tertiary Consumer,Secondary Consumer,Producer,Decomposer" {
+            self.checkLabel.text = "❌ Incorrect"
+            
+            
+        }
+        if answerSent == "Birds eating ticks on rhinos" {
+            self.checkLabel.text = "❌ Incorrect"
+            
+        }
+        if answerSent == "Sharks being able to smell blood" {
+             self.checkLabel.text = "❌ Incorrect"
+            
         }
     
     }

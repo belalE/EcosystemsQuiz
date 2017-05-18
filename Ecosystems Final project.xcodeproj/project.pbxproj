@@ -16,6 +16,8 @@
 		8EDF45101ECC3D3F00DF374B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF450E1ECC3D3F00DF374B /* LaunchScreen.storyboard */; };
 		8EDF451B1ECC3D4000DF374B /* Ecosystems_Final_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF451A1ECC3D4000DF374B /* Ecosystems_Final_projectTests.swift */; };
 		8EDF45261ECC3D4000DF374B /* Ecosystems_Final_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF45251ECC3D4000DF374B /* Ecosystems_Final_projectUITests.swift */; };
+		8EFFC9181ECD727100584ECA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFFC9171ECD727100584ECA /* StartViewController.swift */; };
+		8EFFC91A1ECD757E00584ECA /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFFC9191ECD757E00584ECA /* PracticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8EDF45211ECC3D4000DF374B /* Ecosystems Final projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ecosystems Final projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDF45251ECC3D4000DF374B /* Ecosystems_Final_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecosystems_Final_projectUITests.swift; sourceTree = "<group>"; };
 		8EDF45271ECC3D4000DF374B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EFFC9171ECD727100584ECA /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		8EFFC9191ECD757E00584ECA /* PracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				8EDF45071ECC3D3F00DF374B /* ViewController.swift */,
 				8E863E5F1ECCB75300B2538D /* QuestionViewController.swift */,
 				8E863E611ECCB76B00B2538D /* Answer ViewController.swift */,
+				8EFFC9171ECD727100584ECA /* StartViewController.swift */,
+				8EFFC9191ECD757E00584ECA /* PracticeViewController.swift */,
 				8EDF45091ECC3D3F00DF374B /* Main.storyboard */,
 				8EDF450C1ECC3D3F00DF374B /* Assets.xcassets */,
 				8EDF450E1ECC3D3F00DF374B /* LaunchScreen.storyboard */,
@@ -265,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFFC9181ECD727100584ECA /* StartViewController.swift in Sources */,
 				8EDF45081ECC3D3F00DF374B /* ViewController.swift in Sources */,
 				8E863E621ECCB76B00B2538D /* Answer ViewController.swift in Sources */,
+				8EFFC91A1ECD757E00584ECA /* PracticeViewController.swift in Sources */,
 				8EDF45061ECC3D3F00DF374B /* AppDelegate.swift in Sources */,
 				8E863E601ECCB75300B2538D /* QuestionViewController.swift in Sources */,
 			);
